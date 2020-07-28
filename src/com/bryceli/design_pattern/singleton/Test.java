@@ -16,8 +16,9 @@ public class Test {
 
         };
 
-        public static Abc getInstance(){
+        public Abc getInstance(){
             //创建对象，并返回
+            return null;
         }
     }
 
