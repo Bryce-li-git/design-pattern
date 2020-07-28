@@ -10,28 +10,32 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class OrderPizza {
-	public OrderPizza() {
-		Pizza pizza = null;
-		String orderType;
-		//每增加一种pizza类型，都要修改这里，不符合开闭原则，扩展性和维护性差
-		while (true){
-			//获取输入的披萨类型
-			orderType = gettype();
-			if("cheese".equals(orderType)){
-				pizza = new CheesePizza();
-			}else if ("greek".equals(orderType)){
-				pizza = new GreekPizza();
-			}else if ("pepper".equals(orderType)){
-				pizza = new PepperPizza();
-			}else {
-				break;
-			}
-			pizza.prepare();
-			pizza.bake();
-			pizza.cut();
-			pizza.box();
-		}
-	}
+    SimplePizzaFactory mSimplePizzaFactory;
+
+    //传入简单工厂，进行创建。
+    public OrderPizza(SimplePizzaFactory mSimplePizzaFactory) {
+        setFactory(mSimplePizzaFactory);
+    }
+
+    public void setFactory(SimplePizzaFactory mSimplePizzaFactory) {
+        Pizza pizza = null;
+        String ordertype;
+
+        this.mSimplePizzaFactory = mSimplePizzaFactory;
+
+        do {
+            ordertype = gettype();
+            pizza = mSimplePizzaFactory.CreatePizza(ordertype);
+            if (pizza != null) {
+                pizza.prepare();
+                pizza.bake();
+                pizza.cut();
+                pizza.box();
+            }
+
+        } while (true);
+
+    }
 
 	private String gettype() {
 		try {
