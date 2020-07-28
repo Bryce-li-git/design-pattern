@@ -1,9 +1,6 @@
 package com.bryceli.design_pattern.factory.simple_factory.method;
 
-import com.bryceli.design_pattern.factory.simple_factory.pizza.CheesePizza;
-import com.bryceli.design_pattern.factory.simple_factory.pizza.GreekPizza;
-import com.bryceli.design_pattern.factory.simple_factory.pizza.PepperPizza;
-import com.bryceli.design_pattern.factory.simple_factory.pizza.Pizza;
+import com.bryceli.design_pattern.factory.pizza.Pizza;
 
 import java.io.BufferedReader;
 import java.io.IOException;

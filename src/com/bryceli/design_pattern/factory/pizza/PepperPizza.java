@@ -1,4 +1,4 @@
-package com.bryceli.design_pattern.factory.simple_factory.pizza;
+package com.bryceli.design_pattern.factory.pizza;
 
 public class PepperPizza extends Pizza {
 
