@@ -8,7 +8,7 @@ package com.bryceli.design_pattern.singleton;
  */
 public class ChocolateFactory {
 
-    //补充一下，这里使用static是因为要配合可全局调用的静态方法getInstance()
+
     public static ChocolateFactory uniqueInstance = null;
 
     private ChocolateFactory() {
@@ -16,8 +16,11 @@ public class ChocolateFactory {
         boiled = false;
     }
 
+    //在多线程的场景下，这里的方法执行可能会被分割，是不是线程安全的
     public static ChocolateFactory getInstance() {
         if (uniqueInstance == null) {
+            //断点
+            //如果线程1执行到此停止，交给线程2，那么线程2仍然可以进入并在之后创建对象
             uniqueInstance = new ChocolateFactory();
         }
         return uniqueInstance;
