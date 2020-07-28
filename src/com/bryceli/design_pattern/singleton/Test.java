@@ -8,17 +8,24 @@ package com.bryceli.design_pattern.singleton;
  */
 public class Test {
 
+    //将构造函数和对象私有，只能在自己类中创建对象，外部调用get方法返回单例对象
     public class Abc{
-        public Abc(){
+        private  Abc n1;
+
+        private Abc(){
 
         };
+
+        public static Abc getInstance(){
+            //创建对象，并返回
+        }
     }
 
     public class Cbd{
         public Cbd(){
             Abc n1,n2;
-            n1 = new Abc();
-            n2 = new Abc();
+           // n1 = new Abc();
+           // n2 = new Abc();
         }
     }
 
