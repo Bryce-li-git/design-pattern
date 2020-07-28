@@ -8,23 +8,17 @@ package com.bryceli.design_pattern.singleton;
  */
 public class ChocolateFactory {
 
-
-    public static ChocolateFactory uniqueInstance = null;
+    //优化二：急切创建对象，类加载时就直接创建对象
+    //缺点，如果运行时没有使用该类对象，则造成资源浪费
+    private static ChocolateFactory uniqueInstance = new ChocolateFactory();
 
     private ChocolateFactory() {
         empty = true;
         boiled = false;
     }
 
-    //优化一：使用synchronized修饰接口方法，设置接口方法为同步方法
-    //使用同步锁使某一时刻有且只有一个线程能进入
-    //缺点是，同步锁开销较大，如果需要多次调用get方法，则会出现性能瓶颈
     public static synchronized ChocolateFactory getInstance() {
-        if (uniqueInstance == null) {
-            uniqueInstance = new ChocolateFactory();
-        }
         return uniqueInstance;
-
     }
 
     private boolean empty;
