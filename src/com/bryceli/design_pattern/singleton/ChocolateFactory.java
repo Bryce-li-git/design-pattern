@@ -16,11 +16,11 @@ public class ChocolateFactory {
         boiled = false;
     }
 
-    //在多线程的场景下，这里的方法执行可能会被分割，是不是线程安全的
-    public static ChocolateFactory getInstance() {
+    //优化一：使用synchronized修饰接口方法，设置接口方法为同步方法
+    //使用同步锁使某一时刻有且只有一个线程能进入
+    //缺点是，同步锁开销较大，如果需要多次调用get方法，则会出现性能瓶颈
+    public static synchronized ChocolateFactory getInstance() {
         if (uniqueInstance == null) {
-            //断点
-            //如果线程1执行到此停止，交给线程2，那么线程2仍然可以进入并在之后创建对象
             uniqueInstance = new ChocolateFactory();
         }
         return uniqueInstance;
