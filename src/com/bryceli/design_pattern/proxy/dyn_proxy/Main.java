@@ -2,6 +2,7 @@ package com.bryceli.design_pattern.proxy.dyn_proxy;
 
 import com.bryceli.design_pattern.proxy.static_proxy.Movie;
 import com.bryceli.design_pattern.proxy.static_proxy.MovieImpl;
+import net.sf.cglib.proxy.Enhancer;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
@@ -25,7 +26,13 @@ public class Main {
          * 每个代理的实例都有一个与之关联的 InvocationHandler实现类，如果代理的方法被调用，那么代理便会通知和转发给内部的 InvocationHandler 实现类，由它决定处理。
          * invoke() 方法决定了怎么样处理代理传递过来的方法调用。
          */
-        Movie movieProxy = (Movie) Proxy.newProxyInstance(MovieImpl.class.getClassLoader(),MovieImpl.class.getInterfaces(),movieHandler);
+/*        Movie movieProxy = (Movie) Proxy.newProxyInstance(MovieImpl.class.getClassLoader(),MovieImpl.class.getInterfaces(),movieHandler);
+        movieProxy.play();*/
+
+        Enhancer enhancer = new Enhancer();
+        enhancer.setSuperclass(MovieImpl.class);
+        enhancer.setCallback(new MovieInterceptor());
+        Movie movieProxy = (Movie) enhancer.create();
         movieProxy.play();
     }
 }

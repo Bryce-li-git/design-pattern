@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8507e1ff-2ede-4c4d-849e-8212b1f9aaa7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/bryceli/design_pattern/proxy/dyn_proxy/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bryceli/design_pattern/proxy/dyn_proxy/MovieHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/cglib_3_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bryceli/design_pattern/proxy/dyn_proxy/MovieInterceptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-pattern.iml" beforeDir="false" afterPath="$PROJECT_DIR$/design-pattern.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bryceli/design_pattern/proxy/dyn_proxy/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bryceli/design_pattern/proxy/dyn_proxy/Main.java" afterDir="false" />
     </list>
     <list id="23531f2b-b866-4ef3-bc5d-529be3989722" name="Revert &quot;【工厂模式】工厂方法模式，定义一个创建对象的抽象方法，由子类决定要实例化的类，将对象的实例化推迟到子类&quot;" comment="Revert &quot;【工厂模式】工厂方法模式，定义一个创建对象的抽象方法，由子类决定要实例化的类，将对象的实例化推迟到子类&quot;&#10;&#10;This reverts commit 1e3f155b" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/bryceli/design_pattern/proxy/rmi/MyRemote.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
-              <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+              <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/bryceli/design_pattern/proxy/static_proxy/Movie.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
-              <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+              <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -58,12 +60,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/bryceli/design_pattern/proxy/dyn_proxy/MovieHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="395">
+              <caret line="36" selection-start-line="36" selection-end-line="40" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#487#488#0" expanded="true" />
                 <element signature="e#521#522#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/bryceli/design_pattern/proxy/dyn_proxy/MovieInterceptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -82,7 +96,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/bryceli/design_pattern/proxy/static_proxy/Proxy.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
-              <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+              <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
               <folding>
                 <element signature="e#339#340#0" expanded="true" />
               </folding>
@@ -94,7 +108,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/bryceli/design_pattern/proxy/static_proxy/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
-              <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -102,20 +116,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/bryceli/design_pattern/proxy/dyn_proxy/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/bryceli/design_pattern/proxy/rmi/MyRemoteImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+            <state relative-caret-position="243">
+              <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -127,7 +129,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/bryceli/design_pattern/proxy/rmi/MyRemoteClient.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="377">
-              <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -184,16 +186,17 @@
         <option value="$PROJECT_DIR$/src/com/bryceli/design_pattern/proxy/static_proxy/MovieImpl.java" />
         <option value="$PROJECT_DIR$/src/com/bryceli/design_pattern/proxy/static_proxy/Proxy.java" />
         <option value="$PROJECT_DIR$/src/com/bryceli/design_pattern/proxy/static_proxy/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/bryceli/design_pattern/proxy/dyn_proxy/Main.java" />
         <option value="$PROJECT_DIR$/src/com/bryceli/design_pattern/proxy/dyn_proxy/MovieHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/bryceli/design_pattern/proxy/dyn_proxy/MovieInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/com/bryceli/design_pattern/proxy/dyn_proxy/Main.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="266" />
-    <option name="y" value="105" />
-    <option name="width" value="1375" />
-    <option name="height" value="734" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1939" />
+    <option name="height" value="1049" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -226,6 +229,14 @@
               <item name="design_pattern" type="462c0819:PsiDirectoryNode" />
               <item name="proxy" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="design-pattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="design-pattern" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="design_pattern" type="462c0819:PsiDirectoryNode" />
+              <item name="proxy" type="462c0819:PsiDirectoryNode" />
+              <item name="dyn_proxy" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -235,14 +246,18 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="MANAGE_IGNORE_FILES_PROPERTY" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/大二计划/Wednesday/03 Mybatis/56.mybatis/mybatis/mybatis_day01/代码/mybati第一天源码/day01_eesy_04mybatis_design" />
+    <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/org/ow2/asm/asm/9.0-beta/asm-9.0-beta.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -361,7 +376,7 @@
       <workItem from="1596012783202" duration="261000" />
       <workItem from="1596013503181" duration="69000" />
       <workItem from="1596104940291" duration="677000" />
-      <workItem from="1596536105004" duration="9832000" />
+      <workItem from="1596536105004" duration="11151000" />
     </task>
     <task id="LOCAL-00001" summary="新建项目">
       <created>1595897779342</created>
@@ -465,7 +480,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25379000" />
+    <option name="totallyTimeSpent" value="26698000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -479,16 +494,16 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6412556" visible="true" weight="0.27345845" />
-      <window_info id="Structure" order="1" sideWeight="0.35874438" side_tool="true" visible="true" weight="0.27345845" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.64194375" visible="true" weight="0.27345845" />
+      <window_info id="Structure" order="1" sideWeight="0.35805628" side_tool="true" visible="true" weight="0.27345845" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" sideWeight="0.6557377" side_tool="true" weight="0.27345845" />
       <window_info id="Repositories" order="5" weight="0.3297587" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24220963" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.05240793" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44617563" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.05240793" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49932975" weight="0.3286119" />
@@ -850,7 +865,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/bryceli/design_pattern/proxy/rmi/MyRemoteClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
-          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -860,7 +875,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/bryceli/design_pattern/proxy/rmi/MyRemote.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -870,7 +885,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/bryceli/design_pattern/proxy/static_proxy/Movie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
-          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -884,7 +899,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/bryceli/design_pattern/proxy/static_proxy/Proxy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
           <folding>
             <element signature="e#339#340#0" expanded="true" />
           </folding>
@@ -894,7 +909,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/bryceli/design_pattern/proxy/static_proxy/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -910,8 +925,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bryceli/design_pattern/proxy/dyn_proxy/MovieHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="395">
+          <caret line="36" selection-start-line="36" selection-end-line="40" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#487#488#0" expanded="true" />
@@ -920,10 +935,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bryceli/design_pattern/proxy/dyn_proxy/MovieInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bryceli/design_pattern/proxy/dyn_proxy/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        <state relative-caret-position="243">
+          <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -947,6 +972,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1005,6 +1031,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>cglib-3.3.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
